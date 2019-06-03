@@ -9,7 +9,7 @@ export default class Battle extends React.Component <IBattle, IBattle> {
 
     constructor (props: IBattle) {
         super(props);
-        this.state = {...this.props, villains: []};
+        this.state = {...this.props, villains: [], Loading: true};
     }
     // on component load
     async componentDidMount() {
@@ -26,6 +26,13 @@ export default class Battle extends React.Component <IBattle, IBattle> {
     }
     }
     public render() {
-        return (this.actions.getBattleRenderData(this.state.villains, this.props.location.state));
+        if (this.state.Loading) {
+            return <div className="loader"><p className="loading-text">Loading...</p></div>;
+          }
+          if (this.state.error) {
+            return (<div className="loader"><p className="loading-text">{this.state.error.message}</p></div>);
+          } else {
+          return (this.actions.getBattleRenderData(this.state.villains, this.props.location.state));
+          }
         }
 }

@@ -215,7 +215,16 @@ body {
   background-color: #e62429;
   color: white;
 }
-
+.loader {
+  background: #232323;
+  color: #e62429;
+  height: -webkit-fill-available;
+  display: flex;
+}
+.loading-text{ 
+  font-size: 6vh;
+  margin: auto;
+}
 //TODO: meadia queries 
 @media only screen and (min-width: 768px) {
 

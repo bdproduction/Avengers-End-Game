@@ -29,10 +29,10 @@ export default class AvengerOptions extends React.Component<{}, IAvengerOptions>
   }
   render = () => {
     if (this.state.Loading) {
-      return null;
+      return <div className="loader"><p className="loading-text">Loading...</p></div>;
     }
     if (this.state.error) {
-      return (<div>{this.state.error.message}</div>);
+      return (<div className="loader"><p className="loading-text">{this.state.error.message}</p></div>);
     }
     return (this.actions.getRenderData(this.state.avengersData, this.state.selectedAvengers, this.handleChange));
   }
