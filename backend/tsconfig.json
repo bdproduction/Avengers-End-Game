@@ -11,5 +11,5 @@
     "noImplicitAny": true,
     "moduleResolution": "node",
   },
-  "include": ["./src/**/*.ts", "attributes/Attributes.ts", "avengers/Avenger.model.ts"]
+  "include": ["./src/**/*.ts", "attributes/Attributes.ts", "avengers/Avenger.model.ts", "villains/Villain.model.ts"]
 }

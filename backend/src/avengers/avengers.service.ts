@@ -1,7 +1,7 @@
 import IAvengerService from './interfaces/avengersInterface.service';
 import IAvenger from './interfaces/avengers.interface';
 import Avenger from './Avenger.model';
-import Attributes from '../attributes/Attributes.model';
+import Attributes from './../attributes/Attributes.model';
 
 export default class AvengersService implements IAvengerService {
     private avenger = Avenger;

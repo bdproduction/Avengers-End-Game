@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
-import { AvengersController } from '../avengers/avengers.controller';
-import { VillainsController } from '../villains/villains.controller';
+import { AvengersController } from './avengers/avengers.controller';
+import { VillainsController } from './villains/villains.controller';
 import WebServer from '../server';
 const API_PORT = 3003;
 const app = new WebServer(

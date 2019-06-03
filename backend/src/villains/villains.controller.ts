@@ -1,5 +1,5 @@
 import * as express from 'express';
-import Controller from '../src/interfaces/controller.interface';
+import Controller from '../interfaces/controller.interface';
 import VillainService from './villains.service';
 
 export class VillainsController implements Controller {

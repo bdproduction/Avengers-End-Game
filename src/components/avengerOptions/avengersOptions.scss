@@ -1,0 +1,223 @@
+$font-stack: Helvetica,
+sans-serif;
+
+body {
+  font-family: $font-stack;
+  margin: 0;
+}
+
+.heroes-container {
+  background: url('http://x.annihil.us/u/prod/marvel/i/mg/8/b0/537ba702ad5b3.gif') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-row-gap: 2vh;
+
+  height: -webkit-fill-available;
+  width: auto;
+  min-width: fit-content;
+}
+.battle-container {
+  background: url('http://x.annihil.us/u/prod/marvel/i/mg/8/b0/537ba702ad5b3.gif') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-row-gap: 2vh;
+
+  height: -webkit-fill-available;
+  width: auto;
+  min-width: fit-content;
+}
+.hero-gallery {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  justify-items: center;
+  position: relative;
+}
+.hero-gallery-sider {
+  position: absolute;
+  top: 0;
+  display: flex;
+  height: 100%;
+  width: 7vh;
+  background: black;
+  color: white;
+  opacity: 0.5;
+  justify-content: center;
+  span {
+    height: 30px;
+    line-height: 25vh;
+  }
+}
+
+.hero-gallery-sider.right {
+  right: 0;
+}
+.hero-gallery-sider.left {
+  left: 0;
+}
+
+
+.hero-selection {
+  width: 75vh;
+  display: flex;
+  margin: 0 auto;
+
+  .hero-card {
+    margin: 1vh;
+    width: auto;
+    max-width: 30%;
+  }
+}
+
+.selection-title {
+  font-size: 4vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-card {
+  cursor: pointer;
+  width: 100%;
+  justify-content: center;
+  display: grid;
+  margin: 0.5vh;
+}
+
+.attack-icon {
+  background-position: center;
+  background-image: url("../../resources/Attack.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 55%;
+  width: auto;
+}
+
+.hero-submit {
+  text-decoration: none;
+  grid-area: 4;
+  width: 23vh;
+  display: flex;
+  height: 6vh;
+  justify-self: center;
+  justify-content: center;
+  background-color: #e62429;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 3vh;
+  line-height: 6vh;
+
+  &:hover {
+    background-color: #c21d22;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.health-icon {
+  background-position: center;
+  background-image: url("../../resources/Health.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 55%;
+  width: auto;
+}
+
+.defense-icon {
+  background-position: center;
+  background-image: url("../../resources/Defense.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 55%;
+  width: auto;
+}
+
+.portrait-attribute {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  text-align: left;
+  padding: 0px 5px;
+}
+
+.hero-selected {
+  .portrait-wrapper {
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+  }
+
+  .portrait-header {
+    background-color: #c21d22;
+  }
+}
+
+.hero-card.hero-selected:hover {
+  outline: none;
+}
+
+.hero-card:hover {
+  outline-offset: -0.3vh;
+  outline: 0.3vh solid #c21d22;
+
+  .portrait-header {
+    background-color: #c21d22;
+  }
+
+  .portrait-wrapper {
+    border-bottom: 5px solid #c21d22;
+  }
+}
+
+.portrait-wrapper {
+  padding: 0;
+  overflow: hidden;
+  border-bottom: 5px solid #e62429;
+}
+
+.hero-portrait {
+  display: inline;
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.portrait-body {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-size: 2vh;
+  text-align: center;
+  line-height: 5vh;
+  background-color: #45434c;
+  color: white;
+}
+
+.portrait-header {
+  height: 100%;
+  display: inline;
+  font-size: 2vh;
+  text-align: center;
+  line-height: 5vh;
+  background-color: #e62429;
+  color: white;
+}
+
+//TODO: meadia queries 
+@media only screen and (min-width: 768px) {
+
+
+} 

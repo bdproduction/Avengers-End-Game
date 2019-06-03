@@ -1,5 +1,5 @@
 import * as express from 'express';
-import Controller from '../src/interfaces/controller.interface';
+import Controller from '../interfaces/Controller.interface';
 import AvengersService from './avengers.service';
 
 export class AvengersController implements Controller {
@@ -12,10 +12,10 @@ export class AvengersController implements Controller {
   }
   async getAllAvengers(req: any, res: any, next: any) {
     let avengers: any;
-     try {
+    try {
         avengers = await this.avengersService.getAllAvengers();
      }
-     catch (ex) {
+    catch (ex) {
         console.log(ex.message);
      }
     res.json(avengers);
@@ -28,7 +28,7 @@ export class AvengersController implements Controller {
      catch (ex) {
         console.log(ex.message);
      }
-    res.json(avengers);
+     res.json(avengers);
   }
   async deleteAvengerByID(req: any, res: any, next: any) {
     let avengers: any;
