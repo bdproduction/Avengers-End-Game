@@ -22,13 +22,18 @@ The damage calculus is: opponent_hp = opponent_hp - (attacker_hp - opponent_defe
 To build and run this app locally you will need a few things:
 
 Install Node.js
+
 Install MongoDB
+
 Install VS Code
 
 ### Install Dependencies
 cd <project_name>/client
+
 yarn
+
 cd <project_name>/client/backend
+
 yarn
 
 ## Available Scripts
