@@ -15,7 +15,7 @@ export default class Battle extends React.Component <IBattle, IBattle> {
     async componentDidMount() {
         if(this.props.location.state) {
             console.log(this.props);
-            //get 3 random villains
+            // get 3 random villains
         let response = await this.battleService.getAllVillains();
         if (response.error) {
           this.setState({ Loading: false,  error: response.error  });

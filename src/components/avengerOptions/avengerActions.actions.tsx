@@ -24,10 +24,9 @@ export default class AvengerActions {
     return { avengersData: heroList, selectedHeroes: selectedHeroes };
   }
   // creates heroSelection elements
-  renderselectedHeroes = (selectedHeroes: IHero[], handleChange?: Function) => {
+  renderSelectedHeroes = (selectedHeroes: IHero[], handleChange?: Function) => {
     return (<div className="hero-selection"><HeroSelection selectedHeroes={selectedHeroes} handleChange={handleChange}>
-    </HeroSelection>
-      </div>
+    </HeroSelection></div>
     );
   }
   // creates heroGallery component
@@ -41,8 +40,7 @@ export default class AvengerActions {
     return (<div className="heroes-container">
     {this.renderAvengerList(heroList, handleChange)}
       <div className="selection-title">SELECT 3 AVENGERS</div>
-          {this.renderselectedHeroes(selectedHeroes, handleChange)}
-      }
+          {this.renderSelectedHeroes(selectedHeroes, handleChange)}
       {selectedHeroes.length === 3 &&
       <Link to={routeParams} className="hero-submit">Find Villains</Link>
       }
@@ -52,12 +50,10 @@ export default class AvengerActions {
     public getBattleRenderData = (villainsList: IHero[], selectedHeroes: IHero[]) => {
       let routeParams = {pathname: "/result", state: selectedHeroes};
       return (<div className="battle-container">
-            {this.renderselectedHeroes(villainsList)}
+            {this.renderSelectedHeroes(villainsList)}
             <div className="selection-title">VS</div>
-            {this.renderselectedHeroes(selectedHeroes)}
-
+            {this.renderSelectedHeroes(selectedHeroes)}
         <Link to={routeParams} className="hero-submit">Battle</Link>
-        }
       </div>
       );
   }
