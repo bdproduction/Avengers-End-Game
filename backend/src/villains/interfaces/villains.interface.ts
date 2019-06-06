@@ -1,5 +1,5 @@
 import { Document } from 'mongoose';
-import IAttributes from './../../attributes/attributes.interface';
+import IAttributes from '../../attributes/interfaces/attributes.interface';
 interface IVillain extends Document  {
     Name: string;
     Attributes: IAttributes;

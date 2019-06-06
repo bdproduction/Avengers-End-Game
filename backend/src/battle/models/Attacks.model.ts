@@ -1,6 +1,6 @@
 import * as mongoose from 'mongoose';
 import Attack from '../interfaces/attacks.interface';
-import Avenger from 'src/avengers/Avenger.model';
+import Avenger from 'src/avengers/avenger.model';
 import { number } from 'prop-types';
 const Schema = mongoose.Schema;
 const AttackSchema = new Schema (

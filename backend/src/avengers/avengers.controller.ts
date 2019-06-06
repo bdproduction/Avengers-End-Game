@@ -1,7 +1,8 @@
 import * as express from 'express';
 import Controller from '../interfaces/Controller.interface';
 import AvengersService from './avengers.service';
-
+import { AvengersData } from '../../data/Avengers.json';
+import NewAvengerDto from './dto/newAvenger.dto';
 export class AvengersController implements Controller {
   public path = '/Avengers';
   public router = express.Router();
@@ -40,9 +41,29 @@ export class AvengersController implements Controller {
      }
     res.json(avengers);
   }
+  async createAvengersData() {
+     try {
+        await Promise.all(AvengersData.map(async (element: any) => {
+          await this.avengersService.createAvenger(new NewAvengerDto(element));
+        }));
+     }
+     catch (ex) {
+        console.log(ex.message);
+     }
+  }
+  async deleteAvengers(req: any, res: any, next: any) {
+     try {
+        await this.avengersService.deleteAllAvengers();
+     }
+     catch (ex) {
+        console.log(ex.message);
+     }
+  }
   public intializeRoutes() {
     this.router.get(this.path, this.getAllAvengers.bind(this));
     this.router.get(this.path + '/:id', this.getAvengerByID.bind(this));
     this.router.get(this.path + '/delete/:id', this.deleteAvengerByID.bind(this));
+    this.router.get('/AvengersData', this.createAvengersData.bind(this));
+    this.router.get('/DeleteAvengers', this.deleteAvengers.bind(this));
   }
 }

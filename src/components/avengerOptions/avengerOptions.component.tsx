@@ -14,12 +14,12 @@ export default class AvengerOptions extends React.Component<{}, IAvengerOptions>
   }
   // heroCard mouse event pass id string for filtering
   handleChange = (id: string) => {
-    let data = this.actions.eventHandler(id, this.state.avengersData, this.state.selectedAvengers);
+    let data: any = this.actions.eventHandler(id, this.state.avengersData, this.state.selectedAvengers);
     this.setState({ selectedAvengers: data.selectedHeroes });
   }
   // on component load
-  async componentDidMount() {
-    let response = await this.avengersService.getAllAvengers();
+  async componentDidMount(): Promise<any> {
+    let response: any = await this.avengersService.getAllAvengers();
     if (response.error) {
       this.setState({ Loading: false,  error: response.error  });
     } else {
@@ -30,6 +30,9 @@ export default class AvengerOptions extends React.Component<{}, IAvengerOptions>
   render = () => {
     if (this.state.Loading) {
       return <div className="loader"><p className="loading-text">Loading...</p></div>;
+    }
+    if (this.state.avengersData.length < 1) {
+      return <div className="loader"><p className="loading-text">No Avenger Cards Found. Insert data</p></div>;
     }
     if (this.state.error) {
       return (<div className="loader"><p className="loading-text">{this.state.error.message}</p></div>);

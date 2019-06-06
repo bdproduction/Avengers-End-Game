@@ -10,6 +10,7 @@
     "rootDirs": ["src"],
     "noImplicitAny": true,
     "moduleResolution": "node",
+    "resolveJsonModule": true,
   },
   "include": ["./src/**/*.ts", "attributes/Attributes.ts", "avengers/Avenger.model.ts", "villains/Villain.model.ts"]
 }

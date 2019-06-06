@@ -1,9 +1,9 @@
 import { Document } from 'mongoose';
-import IAttributes from '../../attributes/attributes.interface';
+import IAttributes from '../../attributes/interfaces/attributes.interface';
 interface IAvenger extends Document  {
     Name: string;
     Attributes: IAttributes;
-    Descriptions: string;
+    Description: string;
     Portrait: string;
   }
   export default IAvenger;

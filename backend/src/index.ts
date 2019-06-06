@@ -3,11 +3,13 @@ import mongoose from 'mongoose';
 import { AvengersController } from './avengers/avengers.controller';
 import { VillainsController } from './villains/villains.controller';
 import WebServer from '../server';
+import AttributesController from './attributes/attributes.controller';
 const API_PORT = 3003;
 const app = new WebServer(
   [
     new AvengersController(),
     new VillainsController(),
+    new AttributesController(),
   ],
   API_PORT,
 );

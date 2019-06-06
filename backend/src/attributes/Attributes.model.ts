@@ -1,5 +1,6 @@
 import * as mongoose from 'mongoose';
-import IAttributes from './attributes.interface';
+import Attributes from './interfaces/attributes.interface';
+
 const Schema = mongoose.Schema;
 const AttributesSchema = new Schema(
     {
@@ -8,5 +9,5 @@ const AttributesSchema = new Schema(
       Defense: Number
     }
   );
-  const Attributes = mongoose.model<IAttributes & mongoose.Document>('Attributes', AttributesSchema);
+  const Attributes = mongoose.model<Attributes & mongoose.Document>('Attributes', AttributesSchema);
   export default Attributes;

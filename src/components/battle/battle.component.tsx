@@ -12,11 +12,11 @@ export default class Battle extends React.Component <IBattle, IBattle> {
         this.state = {...this.props, villains: [], Loading: true};
     }
     // on component load
-    async componentDidMount() {
+    async componentDidMount(): Promise<any> {
         if(this.props.location.state) {
             console.log(this.props);
             // get 3 random villains
-        let response = await this.battleService.getAllVillains();
+        let response: any = await this.battleService.getAllVillains();
         if (response.error) {
           this.setState({ Loading: false,  error: response.error  });
         } else {
@@ -25,9 +25,12 @@ export default class Battle extends React.Component <IBattle, IBattle> {
         }
     }
     }
-    public render() {
+    public render(): any {
         if (this.state.Loading) {
             return <div className="loader"><p className="loading-text">Loading...</p></div>;
+          }
+          if(this.state.villains.length < 1) {
+            return <div className="loader"><p className="loading-text">No Villains Cards Found. Insert data</p></div>;
           }
           if (this.state.error) {
             return (<div className="loader"><p className="loading-text">{this.state.error.message}</p></div>);
