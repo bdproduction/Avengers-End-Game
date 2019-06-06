@@ -1,0 +1,104 @@
+{
+    "VillainsData": [
+        {
+            "Name": "Loki",
+            "Attributes": {
+                "Attack": 20,
+                "Defense": 10,
+                "Health": 100
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/017lok_com_crd_01.jpg"
+        },
+        {
+            "Name": "Ultron",
+            "Attributes": {
+                "Attack": 20,
+                "Defense": 10,
+                "Health": 100
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/061ult_com_crd_01.jpg"
+        },
+        {
+            "Name": "Korath",
+            "Attributes": {
+                "Attack": 25,
+                "Defense": 15,
+                "Health": 90
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/177kor_com_crd_01.jpg"
+        },
+        {
+            "Name": "Gamora",
+            "Attributes": {
+                "Attack": 25,
+                "Defense": 15,
+                "Health": 90
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/022gam_com_crd_01.jpg"
+        },
+        {
+            "Name": "Doctor Doom",
+            "Attributes": {
+                "Attack": 32,
+                "Defense": 7,
+                "Health": 80
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/057drd_com_crd_01.jpg"
+        },
+        {
+            "Name": "Skrulls",
+            "Attributes": {
+                "Attack": 32,
+                "Defense": 7,
+                "Health": 80
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/176tls_com_crd_01.jpg"
+        },
+        {
+            "Name": "Hawkeye",
+            "Attributes": {
+                "Attack": 18,
+                "Defense": 22,
+                "Health": 115
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/018hcb_com_crd_01.jpg"
+        },
+        {
+            "Name": "Bron-Char",
+            "Attributes": {
+                "Attack": 18,
+                "Defense": 22,
+                "Health": 115
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/262brc_com_crd_01.jpg"
+        },
+        {
+            "Name": "Groot",
+            "Attributes": {
+                "Attack": 24,
+                "Defense": 14,
+                "Health": 108
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/024grt_com_crd_01.jpg"
+        },
+        {
+            "Name": "Gorgon",
+            "Attributes": {
+                "Attack": 24,
+                "Defense": 14,
+                "Health": 108
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/087ggn_com_crd_01.jpg"
+        }
+    ]
+}

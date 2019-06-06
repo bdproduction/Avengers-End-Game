@@ -1,0 +1,104 @@
+{
+    "AvengersData": [
+        {
+            "Name": "Captain America",
+            "Attributes": {
+                "Attack": 20,
+                "Defense": 10,
+                "Health": 100
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/003cap_com_crd_01.jpg"
+        },
+        {
+            "Name": "Falcon",
+            "Attributes": {
+                "Attack": 25,
+                "Defense": 15,
+                "Health": 90
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/014fal_com_crd_01.jpg"
+        },
+        {
+            "Name": "Hulk",
+            "Attributes": {
+                "Attack": 25,
+                "Defense": 15,
+                "Health": 90
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/006hbb_com_crd_01.jpg"
+        },
+        {
+            "Name": "Iron Man",
+            "Attributes": {
+                "Attack": 32,
+                "Defense": 7,
+                "Health": 80
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/002irm_com_crd_01.jpg"
+        },
+        {
+            "Name": "War Machine",
+            "Attributes": {
+                "Attack": 32,
+                "Defense": 7,
+                "Health": 80
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/042wmr_com_crd_01.jpg"
+        },
+        {
+            "Name": "Vision",
+            "Attributes": {
+                "Attack": 18,
+                "Defense": 22,
+                "Health": 115
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/013vis_com_crd_01.jpg"
+        },
+        {
+            "Name": "Heimdall",
+            "Attributes": {
+                "Attack": 18,
+                "Defense": 22,
+                "Health": 115
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/116hdl_com_inl_01.jpg"
+        },
+        {
+            "Name": "Dr Strange",
+            "Attributes": {
+                "Attack": 24,
+                "Defense": 14,
+                "Health": 108
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/009drs_com_crd_01.jpg"
+        },
+        {
+            "Name": "Thor",
+            "Attributes": {
+                "Attack": 24,
+                "Defense": 14,
+                "Health": 108
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/004tho_com_crd_01.jpg"
+        },
+        {
+            "Name": "Spider Man",
+            "Attributes": {
+                "Attack": 20,
+                "Defense": 10,
+                "Health": 100
+            },
+            "Description": "",
+            "Portrait": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/037smm_com_crd_01.jpg"
+        }
+    ]
+}
