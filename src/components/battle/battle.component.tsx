@@ -1,10 +1,10 @@
 import * as React from "react";
 import IBattle from "./interfaces/BattleInterface.interface";
-import AvengerActions from "../avengerOptions/avengerActions.actions";
 import IHero from "../heroCardComponent/interfaces/heroInterface.interface";
 import BattleService from "./battleService.service";
+import BattleActions from "./battle.actions";
 export default class Battle extends React.Component <IBattle, IBattle> {
-    actions = new AvengerActions();
+    actions = new BattleActions();
     battleService = new BattleService();
 
     constructor (props: IBattle) {
