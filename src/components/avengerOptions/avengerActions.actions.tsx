@@ -3,8 +3,8 @@ import * as React from "react";
 import IHero from "../heroCardComponent/interfaces/heroInterface.interface";
 import HeroSelection from "../heroSelection/heroSelection.component";
 import AvengerGallery from "../avengerGallery/avengerGallery.component";
-import { BrowserRouter, Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import _ from "lodash";
 export default class AvengerActions {
   // on heroCard mouse click
   public eventHandler = (id: string, heroList: IHero[], selectedHeroes: IHero[]) => {
@@ -47,8 +47,13 @@ export default class AvengerActions {
     </div>
     );
     }
+    getHeroIds = (heroList: IHero[]) => {
+      return _.map(heroList, c=> c._id);
+    }
     public getBattleRenderData = (villainsList: IHero[], selectedHeroes: IHero[]) => {
-      let routeParams = {pathname: "/result", state: selectedHeroes};
+      const villainsIDs: string[] = this.getHeroIds(villainsList);
+      const avengersIDs: string[] = this.getHeroIds(selectedHeroes);
+      let routeParams = {pathname: "/result", state: {Villains: villainsIDs, Avengers: avengersIDs}};
       return (<div className="battle-container">
             {this.renderSelectedHeroes(villainsList)}
             <div className="selection-title">VS</div>

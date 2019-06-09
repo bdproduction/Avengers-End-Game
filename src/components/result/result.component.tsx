@@ -14,7 +14,7 @@ export default class Result extends React.Component<IResult> {
         if (this.props.location.state) {
             console.log(this.props);
             // post battle - return battle ID
-            let response = await this.resultService.simulateBattle();
+            let response = await this.resultService.simulateBattle(this.props.location.state);
             if (response.error) {
                 this.setState({ Loading: false, error: response.error });
             } else {
